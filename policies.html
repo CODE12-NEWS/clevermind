@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy & Data Policy - CleverMind AI</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #0f172a;
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #0f172a 100%);
+            min-height: 100vh;
+        }
+
+        /* Header Navigation */
+        header {
+            background: rgba(15, 23, 42, 0.9);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(59, 130, 246, 0.2);
+            padding: 1.5rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .header-content {
+            max-width: 1000px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 2rem;
+        }
+
+        .logo {
+            font-size: 1.6rem;
+            font-weight: 700;
+            background: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-decoration: none;
+        }
+
+        .logo:hover {
+            opacity: 0.8;
+        }
+
+        nav a {
+            color: #e2e8f0;
+            text-decoration: none;
+            margin-left: 2rem;
+            transition: color 0.3s ease;
+            font-size: 0.95rem;
+        }
+
+        nav a:hover {
+            color: #3b82f6;
+        }
+
+        /* Main Container */
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        /* Policy Content */
+        .policy-container {
+            background: rgba(30, 41, 59, 0.8);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(59, 130, 246, 0.2);
+            border-radius: 15px;
+            padding: 3rem;
+            margin: 3rem auto;
+            color: #e2e8f0;
+            line-height: 1.8;
+        }
+
+        .policy-container h1 {
+            font-size: 2.5rem;
+            color: #fff;
+            margin-bottom: 0.5rem;
+            background: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .policy-container .issued-by {
+            font-size: 1rem;
+            color: #94a3b8;
+            margin-bottom: 2rem;
+            border-bottom: 1px solid rgba(59, 130, 246, 0.2);
+            padding-bottom: 1rem;
+        }
+
+        .policy-container h2 {
+            font-size: 1.8rem;
+            color: #fff;
+            margin-top: 2.5rem;
+            margin-bottom: 1.5rem;
+            display: flex;
+            align-items: center;
+        }
+
+        .policy-container h2::before {
+            content: '';
+            display: inline-block;
+            width: 4px;
+            height: 25px;
+            background: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 100%);
+            margin-right: 1rem;
+            border-radius: 2px;
+        }
+
+        .policy-container h3 {
+            font-size: 1.2rem;
+            color: #cbd5e1;
+            margin-top: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .policy-container p {
+            margin-bottom: 1rem;
+            color: #cbd5e1;
+        }
+
+        .policy-container ul, .policy-container ol {
+            margin-left: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .policy-container li {
+            margin-bottom: 0.8rem;
+            color: #cbd5e1;
+        }
+
+        .policy-container strong {
+            color: #3b82f6;
+        }
+
+        .contact-section {
+            background: rgba(59, 130, 246, 0.1);
+            border: 1px solid rgba(59, 130, 246, 0.3);
+            border-radius: 10px;
+            padding: 2rem;
+            margin-top: 2rem;
+            text-align: center;
+        }
+
+        .contact-section h3 {
+            font-size: 1.4rem;
+            margin-bottom: 1rem;
+        }
+
+        .contact-section p {
+            margin-bottom: 1rem;
+        }
+
+        .contact-email {
+            display: inline-block;
+            padding: 0.8rem 2rem;
+            background: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 100%);
+            color: white;
+            text-decoration: none;
+            border-radius: 50px;
+            transition: all 0.3s ease;
+            font-weight: 600;
+        }
+
+        .contact-email:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 30px rgba(59, 130, 246, 0.4);
+        }
+
+        /* Footer */
+        footer {
+            background: rgba(15, 23, 42, 0.9);
+            border-top: 1px solid rgba(59, 130, 246, 0.2);
+            padding: 2rem 0;
+            text-align: center;
+            color: #94a3b8;
+            margin-top: 3rem;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .policy-container {
+                padding: 2rem;
+                margin: 2rem 1rem;
+            }
+
+            .policy-container h1 {
+                font-size: 1.8rem;
+            }
+
+            .policy-container h2 {
+                font-size: 1.4rem;
+            }
+
+            nav {
+                display: none;
+            }
+
+            .header-content {
+                flex-direction: column;
+                gap: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Navigation -->
+    <header>
+        <div class="header-content">
+            <a href="index.html" class="logo">🧠 CleverMind AI</a>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="index.html#products">Products</a>
+                <a href="index.html#contact">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Policy Content -->
+    <section class="container">
+        <div class="policy-container">
+            <h1>PRIVACY & DATA POLICY</h1>
+            <div class="issued-by">ISSUED BY: CleverMind AI</div>
+
+            <h2>1. INTRODUCTION AND GENERAL TERMS</h2>
+            <p>These terms apply to your use of games and products developed by CleverMind AI ("we" / "us").</p>
+            
+            <p>This Privacy & Data Policy ("Privacy Policy") applies to all games, online features, interactive services, and any software made available by us (collectively referred to as the "Game(s)"). Our official website and related online systems are included within these "Online Services."</p>
+
+            <p><strong>If you have questions or comments, contact us at:</strong> <a href="mailto:clevermindai20226@outlook.com" style="color: #3b82f6; text-decoration: none;">clevermindai20226@outlook.com</a></p>
+
+            <p>We are committed to safeguarding your personal data. This policy explains how information collected through our Online Services is processed, managed, and protected. As the "data controller," we comply with all applicable privacy regulations, including the GDPR (2016/679).</p>
+
+            <p><strong>This document outlines:</strong></p>
+            <ul>
+                <li>The types of information we may collect;</li>
+                <li>How this information is utilized;</li>
+                <li>Who your data may be shared with; and</li>
+                <li>Your rights regarding personal information.</li>
+            </ul>
+
+            <p>This Privacy Policy is part of our overall Terms of Use.</p>
+
+            <p>Our Online Services may include links to third-party platforms. Those platforms operate under their own privacy terms, and we encourage you to review them. We are not responsible for how those services handle your data.</p>
+
+            <p>We may update this Privacy Policy periodically. Changes will be posted here, and when appropriate, communicated within our Games.</p>
+
+            <h2>2. INFORMATION WE MAY COLLECT ABOUT YOU</h2>
+            <p>We collect and process the following categories of information, which may include personal data.</p>
+
+            <h3>a) Information you provide while using the Games ("Basic Information")</h3>
+            <ul>
+                <li>Your device's unique ID (Device ID);</li>
+                <li>Your gameplay preferences;</li>
+                <li>Progress-related data such as level completion, virtual currency amounts, tutorial completion, purchases, and ad views.</li>
+            </ul>
+
+            <h3>b) Data used for advertising ("Advertising Data")</h3>
+            <p>Collected through authorized third-party ad partners (depending on the permissions granted):</p>
+            <ul>
+                <li>Device make, model, OS;</li>
+                <li>Device characteristics (screen orientation, audio levels, battery);</li>
+                <li>Mobile network information;</li>
+                <li>Games played;</li>
+                <li>Region, time zone, and language;</li>
+                <li>Network quality and speed;</li>
+                <li>IP Address;</li>
+                <li>MAC Address;</li>
+                <li>Browser type;</li>
+                <li>Advertiser ID (Android/Apple identifier—not your name).</li>
+            </ul>
+
+            <h3>c) Analytics information ("Analytics")</h3>
+            <ul>
+                <li>Device ID and User ID (generated by us);</li>
+                <li>Operating system version and device model;</li>
+                <li>Gameplay attempts and performance;</li>
+                <li>Session duration;</li>
+                <li>Purchase behavior relating to virtual items;</li>
+                <li>User country;</li>
+                <li>Install timestamp and source;</li>
+                <li>Ads viewed or clicked;</li>
+                <li>Error/crash diagnostics.</li>
+            </ul>
+
+            <h3>d) Third-party login information</h3>
+            <p>If you connect via a social provider (e.g., Facebook), we may receive profile data such as your display name, user ID, profile photo URL, and public friend information—only if you give explicit permission.</p>
+
+            <h2>3. WHY WE COLLECT YOUR INFORMATION</h2>
+            <p>We process your data to operate, improve, and maintain our Games. This includes gameplay functionality, analytics, advertising, security, and fraud detection.</p>
+
+            <h2>4. DATA SHARING</h2>
+            <p>Your data is shared only with third parties described in this Policy, such as analytics providers, advertising networks, or service partners needed to operate our Games.</p>
+
+            <h2>5. AUTOMATED DECISION-MAKING</h2>
+            <p>We may use automated systems to detect cheating or fraudulent behavior. Accounts detected engaging in restricted activities may be limited or blocked.</p>
+
+            <h2>6. CONSUMER CONTROL & OPT-OUT</h2>
+            <p>You may opt out of targeted advertising or notifications by adjusting your device settings at any time.</p>
+
+            <h2>7. YOUR RIGHTS</h2>
+            <p>You may request access, correction, deletion, or limitation of your personal information. Contact us at <a href="mailto:clevermindai20226@outlook.com" style="color: #3b82f6; text-decoration: none;">clevermindai20226@outlook.com</a>.</p>
+
+            <h2>8. DATA RETENTION</h2>
+            <p>We retain data only as long as needed for the purposes outlined in this Policy.</p>
+
+            <h2>9. CHILDREN</h2>
+            <p>We do not knowingly collect information from users under the age of 13. If you believe data was collected in error, notify us immediately.</p>
+
+            <h2>10. SECURITY</h2>
+            <p>We implement reasonable security measures to safeguard your data, though no system is entirely immune to risks.</p>
+
+            <div class="contact-section">
+                <h3>📧 CONTACT INFORMATION</h3>
+                <p>For all inquiries, contact us at:</p>
+                <a href="mailto:clevermindai20226@outlook.com" class="contact-email">clevermindai20226@outlook.com</a>
+                <p style="margin-top: 1rem; font-size: 0.9rem;">We aim to reply within three business days.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 CleverMind AI. All rights reserved. Your privacy matters to us.</p>
+        </div>
+    </footer>
+</body>
+</html>
